@@ -4,6 +4,7 @@ public class Proj010class2 {
 
   
     public static void main(String[] args) {
+        while(true){
         System.out.println("first triangle:");
         Triangle T1 = new Triangle(-3, 4);
         T1.PrintInfo();
@@ -11,7 +12,8 @@ public class Proj010class2 {
         System.out.println("wana continue?[y\n]");
         String answer = scanner.nextLine().toLowerCase();
         if (answer.equals("n"))
-            break;
+        System.out.println("thank you!!!");
+        break;
         System.out.println("--------------");
         System.out.println("secend triangle:");
         Triangle T2 = new Triangle(5, 8);
@@ -21,5 +23,7 @@ public class Proj010class2 {
         Triangle T3 = new Triangle(2, 6);
         T2.PrintInfo();
         System.out.println("--------------");
-}
+        break;
+        }
+    }
 }
